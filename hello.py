@@ -94,11 +94,11 @@ else:
 
  
 
-# You are building a bill splitting system for a group of friends.
+
 
  
 
-# Write a Python program that:
+# Write a Python program tha:
 
  
 

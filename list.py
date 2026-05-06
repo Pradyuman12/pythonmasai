@@ -186,82 +186,212 @@ print(nubers)"""
 print(f"{greet_user1("rehul")}")"""
 
 
-def task():
-  tasks=[]
-  total_task=int(input("how meny add task "))
-  for i in range(1,total_task+1):
-   task_name= input(f"enter task {i}=")
-   tasks.append(task_name)
 
-  print(f"your task {tasks}",)
+
+"""a=[1,4,7,8]
+b=["a","b","c"]
+
+print(list(zip(a,b)))"""
+
+"""t=(1,3,8)
+print(t)
+t[0].append(2)
+print(t)"""
+
+#s=" hello wrold "
+#print("reples=",s.replace("wrold","python"))
+#print("find chrecter=",s.find("d"))
+#print("founds index",s.index("w"))
+#print('split',s.split())
+"""var = 10
+for i in range(10):
+    print(i)
+    for j in range(2,10,1):
+        print(j)
+        if var % 2 == 0:
+            continue
+        else:
+            var += 1
+print(var)"""
+
+"""for num in range(10, 14):
+    for i in range(2, num):
+        if num%i == 1:
+            print(num)
+            break"""
+
+
+"""def file_demo():
+  filename="example.txt"
+  with open(filename,"w") as f:
+      f.write("hello python:\n")
+      f.write("this is file handling demo. \n")
+
+
+  print("data written to file ")
+
+  with open(filename, "r") as f:
+      content=f.read()
+      print(content)
+  with open(filename, "r") as f:
+     for line in f:
+        print(line.strip())
+     
+#append file 
+  with open(filename, "a") as f:
+     f.write("append a new line . \n")
+  print("data appended")
+
+  with open(filename,"r") as f:
+     lines=f.readlines()
+     print(lines)
+
+  line_to_write=["line 1\n","line 2\n", "line 3\n"]
+  with open("multi.txt", "w") as f:
+     f.writelines(line_to_write)
+  
+  with open(filename, "r") as f:
+    print("initial position:", f.tell())
+    f.read(5)
+    print("after reading 5 charts:",f.tell())
+    f.seek(10)
+    f.close()
+
+
+file_demo()"""
+
+     
+"""def exception_demo():
+    try:
+     x=int(input("enter a number"))
+     y=10/x
+     print("result:",y)
+    except:
+          print("som e error occurred!")
+
  
-  while True:
-     opetion=int(input("Enter  1-Add\n2-updeate\n3-delete\n4-viwe\n5-exit/stop"))
+exception_demo()"""
 
-     if opetion==1: 
-      add=input("add more task=") 
-      tasks.append(add)
-      print(f"your task {add} add succesfully")
-     elif opetion==2:
-          upedet_value=input("enter task name you want to upedet=") 
-          if upedet_value in tasks :
-           up=input("enter new task")
-           ind=tasks.index(upedet_value)
-           tasks[ind]=up
-           print(f"upedet value {up}")
-     elif opetion ==3:
-        dete_value=input("enter delete value =")
-        inds=tasks.index(dete_value)
-        del tasks[inds]
-        print(f"you are {dete_value} has been deleted")
-     elif opetion==4:
-         print(f"total tasks= {tasks}")
-     elif opetion==5:
-        print("you are exited")  
-        break
-     else:
-        print("invalid cridencal") 
+
+"""class Mother:
+    def skill(self):
+        print("Cooking")
+
+class Father:
+    def skill(self):
+        print("Driving")
+
+class Child(Mother, Father):
+    pass
+
+c = Child()
+c.skill()"""
+
+
+
+
+"""
+class University:
+    def enroll(self):
+        print("Enrolled in University")
+
+class CSE(University):
+    def specialize(self):
+        print("Specializing in Computer Science")
+
+class ECE(University):
+    def specialize(self):
+        print("Specializing in Electronics")
+
+"""
+"""class BankAccount:
+    def __init__(self):
+        self.balance = 5000
+
+    def deduct(self, amount):
+        self.balance -= amount
+
+    def withdraw(self, amount):
+        if self.balance >= amount:
+            self.deduct(amount)
+            print(f"Remaining balance: {self.balance}")
+        else:
+            print("Insufficient funds")
+
+acc = BankAccount()
+acc.deduct(200)"""
+
+
+
+
+
+
+
+"""class AgeError(Exception):
+    def __init__(self, message, age):
+        super().__init__(f"{message}: {age}")
+        self.age = age
+
+def verify_age(age):
+    if age < 0:
+        raise AgeError("Negative age not allowed", age)
+    elif age > 120:
+        raise AgeError("Age exceeds maximum limit", age)
+    return "Valid age"
+
+try:
+    result = verify_age(-5)
+    print(result)
+except AgeError as e:
+    print("Caught:", e)
+    print("Age value:", e.age)
+except ValueError:
+    print("Not a number")
+finally:
+    print("Done")
+"""
+
+"""class Movie:
+  def __init__(self,movie_name,ticket_price,totle_ticket):
+    self.movie_name=movie_name
+    self.totle_ticket=totle_ticket
+    self.ticket_price=ticket_price
+    self.book_ticket=0
+  def book_myticket(self,nums_ticket):
+    if nums_ticket>self.totle_ticket-self.book_ticket:
+      print("sorry enoght ticket availeble")
+    else:
+      self.book_ticket+=nums_ticket
+      self.totle_ticket-=nums_ticket
+      print("your ticket is booked successfully")
+      print(f"your price is {self.ticket_price*nums_ticket}")
+
+      
+
+  def show_status(self):
+     
+     print(f"movie name {self.movie_name}")
+     print(f"availeble seats:{self.totle_ticket}")
+     print(f"totle booked:{self.book_ticket}")
+
+    
+b1=Movie("krish",100,400)
+
+b1.show_status()
+b1.book_myticket(100)
+b1.show_status()"""
+
+def vovals(s):
+  vowals="aeiouAEIOU"
+  sum=0
+  for char in s:
+    if char in vowals:
+      sum +=1
+
+  return sum
+  
 
   
 
-
-
-
-task()
-
-
-
-
-
-
-
-
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-
-
-
-
-
-
-
-
-
-
+s="hello wrold"
+print(vovals(s))

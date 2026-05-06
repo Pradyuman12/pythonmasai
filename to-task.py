@@ -56,33 +56,33 @@ for i in range(1,taks_value+1):
 print(f"this is your task {tasks}")
 
 while True:
-      operation=input("enter 1-Add\n2-update\n3-delete\n4-viwe\n5-exit")
-      if operation==1:
+ operation=int(input("enter 1-Add\n2-update\n3-delete\n4-viwe\n5-exit"))
+ if operation==1:
         add=input("add more task")
         tasks.append(add)
-      elif operation==2:
+ elif operation==2:
           updete_value=input("enter what do you want update name =")
           if updete_value in tasks:
            up=print("enter new name=")
            ind=tasks.index(updete_value)
            tasks[ind]=up
            print(f"name has been {up} succesfully")
-      elif operation ==3:
+ elif operation ==3:
         delete=input("enter delete name")
         dets=tasks.index(delete)
         del tasks[dets]
         print(f"name has been {delete} deleted")
-      elif operation==4:
+ elif operation==4:
         print(f"total tasks {tasks}")
-      elif operation==5:
+ elif operation==5:
         print(f"you are exited")
         break
-      else:
+ else:
         print("invalid creadensile")
 
 
 
-add_Task()       
+add_Task()     
         
         
 
