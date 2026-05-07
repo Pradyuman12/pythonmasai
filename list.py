@@ -381,7 +381,7 @@ b1.show_status()
 b1.book_myticket(100)
 b1.show_status()"""
 
-def vovals(s):
+"""def vovals(s):
   vowals="aeiouAEIOU"
   sum=0
   for char in s:
@@ -394,4 +394,41 @@ def vovals(s):
   
 
 s="hello wrold"
-print(vovals(s))
+print(vovals(s))"""
+
+"""def largest(nums):
+  largest=nums[0]
+  for num in nums:
+    if largest < num:
+       largest=num-1
+  return largest
+
+nums=[1,2,3,4,5]
+print(largest(nums))"""
+
+def is_prime(nums):
+  if nums <=1:
+     return False
+  for i in range(2,nums):
+      if nums%i==0:
+       return False
+  
+  return True
+
+
+nums=[4,5,7,8,9,]
+
+for n in nums:
+  if is_prime(n):
+    print(f"this is prime {n}")
+  else:
+    print(f"this is not prime {n}")
+
+
+
+
+
+
+
+
+
