@@ -406,7 +406,7 @@ print(vovals(s))"""
 nums=[1,2,3,4,5]
 print(largest(nums))"""
 
-def is_prime(nums):
+"""def is_prime(nums):
   if nums <=1:
      return False
   for i in range(2,nums):
@@ -422,7 +422,141 @@ for n in nums:
   if is_prime(n):
     print(f"this is prime {n}")
   else:
-    print(f"this is not prime {n}")
+    print(f"this is not prime {n}")"""
+
+
+
+"""name="reetu"
+print(name)
+
+name="tripti"
+print(name)"""
+
+
+
+
+"""first="Hello"
+second="world"
+
+result=first+" "+second
+
+print(result)
+print(first.upper())"""
+
+
+
+#first="  hell o   "
+
+#print(first.strip())
+
+"""name="alice"
+age=25
+srind=f"this is {name},this is {age}"
+print(srind)"""
+
+"""pi=3.144578969874475896789
+
+print(f"pi value: {pi:.10f}")"""
+
+
+
+"""student=["kalpesh","deepak","rahul","pradyuman"]
+
+city=[]
+city.append("dehle")
+
+if not city:
+  print("this city is empty")"""
+
+
+
+"""number=list(range(10,100,5))
+print(number)"""
+
+
+
+"""message="thinks,this,makes,a,lot,sense"
+
+words=message.split(",")
+print(words)"""
+
+number=[10,20,40,7,90,1,2,3,4,5]
+#print(number[3:7:2])
+#print(number[:7])
+#print(number[4:])
+#print(number[:])
+#print(number[-3:])
+
+"""size=len(number)
+middle=size//2
+
+first_half=number[0:middle]
+second_half=number[middle:]
+print(first_half)
+print(second_half)"""
+
+
+"""word=["apple","delhi","gurgaon","chennai","bangalore"]
+word.sort()
+print(word)"""
+
+
+"""original=[5,1,2,3,4]
+copy=original
+
+print(original)
+print(copy)
+
+original.sort()
+
+print("===========")
+print(original)
+print(copy)"""
+
+
+
+"""words=["apple","delhi","goa","gurgaon"]
+for i,word in enumerate(words):
+  print(f"{i}:{word}")"""
+
+
+#names=["kalpesh","harole","tripti","Reetu"]
+"""marks=[60,58,90,78]
+
+for name,mark in zip(names,marks):
+  print(f"{name}:{mark}")"""
+
+
+#names=("kalpesh","harole","tripti","Reetu")
+
+"""print(names)
+names.append()
+print(names)"""
+
+
+
+
+
+def get_coodinater():
+  return 10,3
+
+ans=get_coodinater()
+print(ans)
+print(type(ans))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
