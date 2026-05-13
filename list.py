@@ -480,7 +480,7 @@ print(number)"""
 words=message.split(",")
 print(words)"""
 
-number=[10,20,40,7,90,1,2,3,4,5]
+#number=[10,20,40,7,90,1,2,3,4,5]
 #print(number[3:7:2])
 #print(number[:7])
 #print(number[4:])
@@ -534,15 +534,284 @@ names.append()
 print(names)"""
 
 
-
-
-
-def get_coodinater():
+"""def get_coodinater():
   return 10,3
 
 ans=get_coodinater()
 print(ans)
 print(type(ans))
+"""
+
+
+"""nums=int(input("enter number"))
+
+if nums%2==0:
+  print(f"this is even {nums}")
+else:
+  print(f"this is odd {nums}"""
+
+
+"""nums_1=int(input("enter number"))
+nums_2=int(input("enter number"))
+nums_3=int(input("enter number"))
+
+
+if nums_1>nums_2 or nums_1>nums_3:
+  print(f"this is large number {nums_1}")
+elif nums_1<nums_2 or nums_2>nums_3:
+  print(f"this is large number {nums_2}")
+elif nums_3>nums_1 or nums_3>nums_2:
+  print(f"this is large number {nums_3}")
+else:
+  print("every number evcele")"""
+
+
+
+
+"""def is_prime(nums):
+  if nums <=1:
+    return False
+  for i in range(2,nums):
+    if nums%i==0:
+      return False
+  
+  return True
+  
+nums=[3,4,5,6]
+
+for n in nums:
+   if is_prime(n):
+     print(f"this is prime number {n}")
+   else:
+     print(f"this is not prime number {n}")"""
+
+
+
+
+
+
+"""num=int(input("enter number "))
+fect=1
+for i in range(1,num+1):
+    fect=fect*i
+
+print(fect)"""
+
+
+"""def fectoril(num):
+  if num ==1 or num==0:
+     return 1
+  
+  return num*fectoril(num-1)
+
+num=int(input("enter number"))
+print(fectoril(num))"""
+
+"""def fibo(num):
+  if num==1 or num==0:
+    return num
+  return  fibo(num-1) + fibo(num-2)
+
+num=int(input("enter number"))
+print(fibo(num))"""
+
+"""def revers(strings):
+    strings = list(strings)
+    left =0
+    right=len(strings)-1
+    while left < right:
+     strings[left],strings[right]=strings[right],strings[left]
+     left +=1
+     right-=1
+     return "".join(strings)
+
+
+print(revers("python"))"""
+
+
+"""def palindrom(s,left,right):
+  if left >right:
+    return False
+  if s[left] !=s[right]:
+    return False
+  
+  return True
+  
+  
+s="madam"
+print(palindrom(s,0,len(s)-1))"""
+
+
+"""def vowales(s):
+  vowal="aioueAIOUE"
+  sum=0
+  for i in s:
+    if i in vowal:
+      sum +=1
+
+  return sum 
+
+  
+s="hello pradyuman"
+print(vowales(s))"""
+
+
+
+"""def large_num(nums):
+  larger=nums[0]
+  for num in nums:
+    if num > larger:
+      larger=num
+  return larger
+
+
+nums=[1,2,3,4,5]
+print(large_num(nums))"""
+
+
+
+
+"""num =[1,2,3,2,4,5,6,3]
+
+result=[]
+
+for i in num:
+  if i not in result:
+    result.append(i)
+
+
+print(result)"""
+
+
+"""def merge_sort(list_1,list_2):
+  
+  result=[]
+  i=0
+  j=0
+  while i<len(list_1) and j<len(list_2):
+    if list_1[i]<list_2[j]:
+      result.append(list_1[i])
+      i +=1
+    else:
+      result.append(list_2[j])
+      i +=1
+
+      while i<len(list_1):
+        result.append(list_1[i])
+        i +=1
+
+
+        while j <len(list_2):
+          result.append(list_2[j])
+          j +=1
+        return result
+
+      
+
+list_1=[1,2,4,6,7,8]
+list_2=[3,4,8,9,5,6]
+print(merge_sort(list_1,list_2))"""
+
+"""def revers(string):
+  string=list(string)
+  left=0
+  right=len(string)-1
+  while left<right:
+    string[left],string[right]=string[right],string[left]
+    left +=1
+    right-=1
+
+    return "".join(string)
+
+
+
+string="python"
+print(revers(string))"""
+
+"""def is_prime(num):
+  if num<=1:
+    return False
+  for i in range(2,num):
+    if num%i==0:
+      return False
+    
+    return True
+
+  
+print(is_prime(8))"""
+
+
+"""def dublicat(nums):
+  sum=[]
+  for i in nums:
+    if i not in sum:
+      sum.append(i)
+  return sum
+  
+dub=[1,2,3,4,5,6,4,5,2]
+print(dublicat(dub)) """
+
+
+"""def fibonachi(num):
+  if num==1 or num==0:
+     return num
+  return fibonachi(num-1) + fibonachi(num-2)
+
+print(fibonachi(10))"""
+
+
+
+
+def merge_sort(list_1,list_2):
+   result=[]
+   i=0
+   j=0
+   while i< len(list_1) and j< len(list_2):
+      if list_1[i]<list_2[j]:
+       result.append(list_1[i])
+       i +=1
+       
+      else:
+        result.append(list_2[j])
+        j +=1
+
+   while i <len(list_1):
+     result.append(list_1[i])
+     i +=1
+   while j <len(list_2):
+     result.append(list_2[j])
+     j +=1
+
+   return result
+
+list_1=[1,2,3,4]
+list_2=[5,6,7,8]
+print(merge_sort(list_1,list_2))
+      
+
+
+
+
+
+
+
+
+
+  
+  
+      
+      
+
+
+
+
+
+
+
+  
+
+
+
 
 
 
