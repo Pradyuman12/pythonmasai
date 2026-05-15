@@ -762,7 +762,7 @@ print(fibonachi(10))"""
 
 
 
-def merge_sort(list_1,list_2):
+"""def merge_sort(list_1,list_2):
    result=[]
    i=0
    j=0
@@ -786,7 +786,191 @@ def merge_sort(list_1,list_2):
 
 list_1=[1,2,3,4]
 list_2=[5,6,7,8]
-print(merge_sort(list_1,list_2))
+print(merge_sort(list_1,list_2))"""
+
+"""def second_large(nums):
+  large=nums[0]
+  for num in nums:
+    if num > large:
+      large=num-1
+  return large
+
+
+nums = [1,2,3,4,5,6]
+print(second_large(nums))"""
+
+
+
+
+
+"""def revers_string(string):
+  string=list(string)
+  left=0
+  right=len(string)-1
+  while left < right:
+    string[right],string[left]=string[left],string[right]
+    left +=1
+    right -=1
+  return string
+  
+string="python"
+print(revers_string(string))"""
+
+"""def is_prime(num):
+  if num <=1:
+    return False
+  for i in range(2,num):
+    if num%i==0:
+      return False
+  return True
+
+num=4
+print(is_prime(num))"""
+
+
+"""def dublicate(num):
+  result=[]
+  for i in num:
+    if i not in result:
+      result.append(i)
+  return result
+
+num=[1,2,3,4,1,2,5,6,6]
+print(dublicate(num))"""
+
+
+
+"""num=5
+sum=1
+for i in range(1,num+1):
+    sum=sum*i
+
+print(sum)"""
+
+
+
+"""def fibonacci(num):
+  if num==1 or num==0:
+    return num
+  return fibonacci(num-1)+fibonacci(num-2)
+
+num=10
+print(fibonacci(num))"""
+
+"""def large(num):
+  large=num[0]
+  for i in num:
+    if i>large:
+      large=i
+  return large
+
+num=[40,50,10,20,62,52]
+print(large(num))"""
+
+
+"""def vowals(num):
+  vole="aioueAIOUE"
+  count =0
+  for i in num:
+   if i in vole:
+    count +=1
+  return count
+
+num="programms"
+print(vowals(num))"""
+
+
+"""def merge1_sort(list_1,list_2):
+  result=[]
+  i=0
+  j=0
+  while i<len(list_1) and j < len(list_2):
+    if list_1[i] < list_2[j]:
+      result.append(list_1[i])
+      i+=1
+    else:
+      result.append(list_2[j])
+      j+=1
+
+    while i<len(list_1):
+        result.append(list_1[i])
+        i +=1
+
+    while j<len(list_2):
+          result.append(list_2[j])
+          j+=1
+
+    return result
+
+list_1=[1,2,3]
+list_2=[4,5,6]
+print(merge1_sort(list_1,list_2))"""
+
+
+"""def palindrom(string,left,right):
+
+  while left< right:
+    if string[left] != string[right]:
+       return False
+    
+    left +=1
+    right -=1
+  
+  return True
+
+s="madem"
+print(palindrom(s,0,len(s)-1))"""
+  
+  
+  
+
+
+
+
+
+
+
+
+
+  
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
       
 
 
