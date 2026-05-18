@@ -59,7 +59,7 @@ teacher=Teacher("pradyuman",45,"math",45000)
 teacher.show_details()
 teacher.show()"""
 
-class rectengle:
+"""class rectengle:
   def __init__(self,l,b):
     self.l=l
     self.b=b
@@ -70,4 +70,67 @@ class rectengle:
 
 rect=rectengle(10,20)      
 print(rect.area())
-print(rect.withd())
+print(rect.withd())"""
+
+
+""""class Person:
+  def __init__(self,name,age):
+    self._name=name
+    self._age=age
+
+  def set_age_name(self,names,ages):
+    self._name=names
+    self._age=ages
+
+  def get_name(self):
+    print(f"name:{self._name} age:{self._age}")
+
+
+obj=Person("pradyuman",25)
+obj.get_name()
+obj.set_age_name("rahul",45)
+obj.get_name()"""
+
+
+"""class Dog:
+  def sound(self):
+     print(f"soun_1")
+
+class Cat:
+   def sound(self):
+      print(f"sound_2")
+
+
+
+cat=Cat()
+dog=Dog()
+cat.sound()"""
+
+
+"""class crcile:
+  def __init__(self,redus):
+    self.redus=redus
+
+  def area(self):
+    return 3.14*self.redus*self.redus
+    
+crs=crcile(5) 
+print(crs.area() ) """
+
+
+nums=[1,2,5,4,7,9]
+target=7
+
+
+for j in range(len(nums)):
+    if nums[j]==target:
+        print(f"{j}")
+        
+
+
+
+
+
+
+
+      
