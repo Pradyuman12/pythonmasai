@@ -921,8 +921,93 @@ print(merge1_sort(list_1,list_2))"""
 s="madem"
 print(palindrom(s,0,len(s)-1))"""
   
+"""class Test:
+    def __init__(self):
+        print("Hello")
+
+obj = Test()"""
+
+
+
+
+#print(bool([]), bool(" "), bool(0))
   
+"""class Reteangale:
+  def __init__(self,lenght,width):
+    self.lenght=lenght
+    self.width=width
+
+  def area(self):
+    return self.lenght*self.width
+  def widht(self):
+    return 2*self.lenght*self.width
   
+
+obj=Reteangale(10,15)
+print(obj.area())
+print(obj.widht())"""   
+
+
+"""class student:
+  def __init__(self,name ,marks):
+    self.name=name
+    self.marks=marks
+  
+  def display(self):
+    print(f"name:{self.name} marks:{self.marks}")
+
+
+dis=student("pradyuman",58)  
+dis.display()"""
+
+
+"""class Banck:
+  def __init__(self,name,balance):
+    self.name=name
+    self.balance=balance
+    print(f"my balance {self.balance}")
+  def deposite(self,diposit):
+    self.balance +=diposit
+    print(f"your current  balance is :{self.balance}")
+    
+  def widrol(self,widrol):
+    self.balance -=widrol
+    print(f"your balance is {self.balance}")
+
+
+bancks=Banck("pradyuman",100000)
+bancks.deposite(100000)
+bancks.widrol(50000)"""
+    
+    
+"""class Animals:
+  def sound(self):
+    print(f"dog is sleeps")
+  
+
+
+class Dog(Animals):
+  def bark(self):
+    print("dog is barks")
+
+dog=Dog()
+dog.bark()
+dog.sound()"""
+
+
+
+
+
+
+  
+    
+
+
+
+
+
+
+
 
 
 
