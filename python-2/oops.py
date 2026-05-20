@@ -367,10 +367,39 @@ c.show()
 c.remove("acc")"""
       
     
+"""def sum_number(num,traget):
+  left=0
+  right=len(num)-1
+  while left <right:
+    total=num[left]+num[right]
+
+    if total == traget:
+      return num[left],num[right]
+    elif total < traget:
+      left +=1
+    else:
+      right -=1
+  
+  return -1  
 
 
+num=[1,2,3,4,5,6,7,8]
+print(sum_number(num,11))"""
 
 
+def dublicat(nums):
+  nums.sort()
+  left=0
+  for right in range(1,len(nums)):
+    if nums[left] !=nums[right]:
+       left +=1
+       nums[left]=nums[right]
+
+  return left+1
+
+nums=["aman","rahul","kajel","pradyuman","john","rahul"]
+count= dublicat(nums)
+print(nums[:count])
 
 
 
